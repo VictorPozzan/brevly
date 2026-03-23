@@ -29,4 +29,4 @@ ENV NODE_ENV=production
 
 EXPOSE 3333
 
-CMD ["node", "dist/server.js"]
+CMD ["sh", "-c", "node dist/db/migrate.js && node dist/server.js"]
